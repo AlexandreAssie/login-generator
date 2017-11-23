@@ -9,7 +9,7 @@ public class PasswordGeneration {
     public String getRandomPassword(){
         StringBuilder salt = new StringBuilder();
         Random rand = new Random();
-        while (salt.length() < 18) { // length of the random string.
+        while (salt.length() < 8) { // length of the random string.
             int index = (int) (rand.nextFloat() * characters.length());
             salt.append(characters.charAt(index));
         }
